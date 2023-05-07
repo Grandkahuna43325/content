@@ -310,7 +310,7 @@ import("./node_modules/hello-wasm/hello_wasm.js").then((js) => {
 
 This imports the new module from the `node_modules` folder. This isn't considered a best practice, but this is a demo, so it's OK for now. Once it's loaded, it calls the `greet` function from that module, passing `"WebAssembly"` as a string. Note how there's nothing special here, yet we're calling into Rust code. As far as the JavaScript code can tell, this is just a normal module.
 
-Finally, we need to modify the HTML file; open the `index.html` file and replace the current contents with the following:
+Finally, we need to add an HTML file; create the `index.html` file and paste this to a file:
 
 ```html
 <!DOCTYPE html>
